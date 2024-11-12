@@ -1,0 +1,172 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 70vh;
+  width: 99%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+main, .container {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+#todo-container{
+  width: 60%;
+}
+#input {
+  font-size: 1.3rem;
+  padding: 8px 18px;
+  width: 60%;
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 7px;
+}
+
+.button {
+  background-color: aqua;
+  padding: 8px 12px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(1.2);
+}
+
+.fa-solid {
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  padding-left: 3px;
+}
+
+ul {
+  list-style: upper-roman;
+  padding-left: 1rem;
+}
+
+li {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.new {
+  font-size: 1rem;
+  margin: 10px 10px 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #input {
+      width: 80%;
+  }
+  .fa-solid {
+      font-size: 1.3rem;
+  }
+  .button {
+      font-size: 1rem;
+  }
+  li {
+      margin-left: 1rem;
+      font-size: 1rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.form-container input[type="checkbox"] {
+  display: none;
+}
+
+.form-login, .form-signup {
+  width: 100%;
+  padding: 40px;
+  transition: transform 0.6s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.toggle-link {
+  margin-top: 15px;
+  text-align: center;
+  color: #0066cc;
+  cursor: pointer;
+  font-size: 14px;
+}
